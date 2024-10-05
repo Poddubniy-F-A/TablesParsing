@@ -65,7 +65,7 @@ public class Main {
                         columnsNamesCol, primaryKeyName, tablesCol, tableName)));
 
         if (columnType.next()) {
-            fileHandler.addRowToFile(new String[]{tableName, primaryKeyName, columnType.getString(columnsTypesCol)});
+            fileHandler.addRow(new String[]{tableName, primaryKeyName, columnType.getString(columnsTypesCol)});
 
             if (columnType.next()) {
                 System.err.printf("В %s продублирована запись для ключа %s таблицы %s\n",

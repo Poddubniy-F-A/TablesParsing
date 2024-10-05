@@ -18,7 +18,7 @@ public class FileHandler implements Closeable {
         }
     }
 
-    public void addRowToFile(String[] rowParts) throws IOException {
+    public void addRow(String[] rowParts) throws IOException {
         writer.append(String.join(", ", rowParts)).append("\n");
     }
 }
